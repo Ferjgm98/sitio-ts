@@ -181,6 +181,7 @@ p {
 *******************************************************************************************/
 @media all and (max-width: 1064px) {
   .ts-menu_mobile {
+    z-index: 10000;
     display: inherit;
   }
   .ts-content--hero .ts--link {
@@ -632,7 +633,7 @@ p {
   height: auto;
   width: 40%;
   left: 58%;
-  top: 4900px;
+  top: 4800px;
 }
 
 .ts-content--videos .ts-pattern-5 {

@@ -101,6 +101,7 @@
 *******************************************************************************************/
 @media all and(max-width: 1064px){
     .ts-menu_mobile {
+        z-index: 10000;
         display: inherit;
     }
     .ts-content--hero .ts--link{
