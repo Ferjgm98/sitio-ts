@@ -395,7 +395,7 @@ p {
   height: 100vh;
   -webkit-transform: skew(0deg, -3deg) translateY(-40px);
           transform: skew(0deg, -3deg) translateY(-40px);
-  background: url("/../../img/hero-ts.png");
+  background: url("../../img/hero-ts.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -564,7 +564,7 @@ p {
 }
 
 .ts-content--main_banner {
-  background: url("/../../img/banner.png");
+  background: url("../../img/banner.png");
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
