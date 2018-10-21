@@ -4,7 +4,7 @@
 //     var click = 'click';
 // }
 var click = 'click';
-document.querySelector('#ts-header--nav_mobile--burger-btn').addEventListener(click, function(){
+document.querySelector('#ts-header--nav_mobile--burger-btn').addEventListener('click', function(){
     if(!this.classList.contains('open')) {
         openMenu();
     } else {
@@ -12,8 +12,8 @@ document.querySelector('#ts-header--nav_mobile--burger-btn').addEventListener(cl
     }
 });
 
-$('.ts--menu_item .ts--link').on(click, function(e) {
-    closeMenu();
+$('.ts-header--nav_mobile--list .ts--menu_item .ts--link').on('click', function(e) {
+    closeMenu(); 
 });
 
 function openMenu(){
