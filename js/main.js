@@ -1,9 +1,9 @@
-if( 'ontouchstart' in window) {
-    var click = 'touchstart';
-} else {
-    var click = 'click';
-}
-
+// if( 'ontouchstart' in window) {
+//     var click = 'touchstart';
+// } else {
+//     var click = 'click';
+// }
+var click = 'click';
 document.querySelector('#ts-header--nav_mobile--burger-btn').addEventListener(click, function(){
     if(!this.classList.contains('open')) {
         openMenu();
