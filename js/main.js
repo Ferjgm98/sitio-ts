@@ -62,3 +62,19 @@ function closeMenu() {
 
 }
 
+
+
+function smoothScroll(action, destiny) {
+    $(action).click(function() {
+        $('html, body').animate({
+            scrollTop: $(destiny).offset().top
+        }, 200);
+    });
+}
+
+smoothScroll('#home-m, #home-d', '#home');
+smoothScroll('#about-m, #about-d', '#about-us');
+smoothScroll('#projects-m, #projects-d', '#our-projects');
+smoothScroll('#videos-m, #videos-d', '#vr-videos');
+smoothScroll('#arrow-about', '#about-us');
+
