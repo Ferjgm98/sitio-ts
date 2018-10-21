@@ -1,0 +1,49 @@
+$primary-color: #170D1E;
+$second-color: #A5A5A5;
+$third-color: #100914;
+$main-font: 'Roboto', sans-serif;
+$second-font: 'Poppins', sans-serif;
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $main-font;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: $main-font;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 35px;
+}
+
+p {
+    color: $second-color;
+}
+
+/**
+    Clases auxiliares
+**/
+
+.active {
+    border-top: 2px solid #fff;
+}

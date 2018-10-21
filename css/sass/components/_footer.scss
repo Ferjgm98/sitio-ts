@@ -1,0 +1,125 @@
+/*******************************************************************************************
+*                ---------------------
+*               |    Footer Styles   |
+*               ----------------------
+*******************************************************************************************/
+.ts-footer {
+    background-color: $third-color;
+    margin-top: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+
+    &--foo1{
+        padding: 50px 70px;
+        width: 100%;
+        display: flex;
+
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        &--copy {
+            flex: 0 0 auto;
+            margin-right: 10px;
+        }
+        &--link {
+            flex: 1 0 auto;
+        }
+        &--nav_menu_social{
+            display: flex;
+            flex-flow: row nowrap;
+
+            & .ts-social {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &--support {
+        background-color: $third-color;
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        padding: 0;
+        width: 100%;
+        &_img{
+            padding: 25px;
+            height: 125px;
+            width: auto;
+            &.logo-1 {
+                width: 210px;
+            }
+            &.logo-3 {
+                width: 125px;
+            }
+        }
+    }
+}
+
+/*******************************************************************************************
+*                ----------------------------
+*               |    Footer mobilr Styles   |
+*               ----------------------------
+*******************************************************************************************/
+@media all and (max-width: 1024px)
+{
+
+    .ts-footer {
+        background-color: $third-color;
+        margin-top: 200px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+
+        &--foo1{
+            padding: 50px 30px;
+            width: 100%;
+            display: flex;
+
+            flex-flow: column nowrap;
+            justify-content: center;
+            &--copy {
+                text-align: center;
+                margin: 0;
+            }
+            &--link {
+                text-align: center;
+            }
+            &--nav_menu_social{
+                display: flex;
+                flex-flow: row nowrap;
+                align-content: center;
+                justify-content: center;
+
+                & .ts-social {
+                    margin: 10px;
+                }
+            }
+        }
+
+        &--support {
+            background-color: $third-color;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            padding: 0 30px;
+            width: 100%;
+            &_img{
+                padding: 25px;
+                height: 125px;
+                width: 100%;
+                &.logo-1 {
+                    width: 210px;
+                    margin: 0 auto;
+                }
+                &.logo-3 {
+                    margin: 0 auto;
+                    width: 125px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,312 @@
+/*******************************************************************************************
+*                --------------------------
+*               |    Main Content Styles   |
+*               ---------------------------
+*******************************************************************************************/
+.ts-content {
+    /**
+        Estilos de primera seccion
+    */
+    &--skew {
+        height: 100vh;
+        transform: skew(0deg, -3deg) translateY(-40px);
+        background: url("/../../img/hero-ts.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+
+    }
+
+    &--hero {
+        height: 100vh;
+        transform: skew(0deg, 3deg) translateY(40px);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        & .ts--link{
+            align-self: center;
+            & .ts--play {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        & .ts--item-container{
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 25%;
+            & .ts--link-arrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .ts--arrow-down {
+                    max-width: 2%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    /**
+        Estilos de sobre nosotros
+    */
+
+    &--about{
+        margin: 0 70px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        & .ts-pattern-1 {
+            position: absolute;
+            z-index: -100;
+            height: auto;
+            width: 40%;
+            left: -20%;
+            top: 115%;
+            transform: rotate(-25deg);
+        }
+        & .text {
+            width: 50%;
+        }
+
+        &-slider {
+            margin: 45px 10px;
+            & .slider-img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+    /**
+        Estilos - nuestros proyectos
+    */
+
+    &--projects {
+        margin: 0 80px;
+        margin-bottom: 100px;
+        & .ts-project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px); 
+            grid-gap: 100px;
+            justify-content: center;
+            align-items: center;
+            & .ts-project-item {
+                margin-bottom: 5px;
+                height: auto;
+                width: 400px;
+                & img {
+                    max-width: 100%;
+                }
+            }
+            & .ts-project-2.ts--level-1 {
+                grid-row-end: span 2;
+            }
+
+            & .ts-project {
+                margin-bottom: 5px;
+                & .title-p{
+                    font-family: $second-font;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+        & .ts-pattern-2 {
+            position: absolute;
+            z-index: -100;
+            height: auto;
+            width: 40%;
+            left: 75%;
+            top: 1980px;
+            transform: rotate(-20deg);
+        }
+        & .ts-pattern-3 {
+            position: absolute;
+            z-index: -100;
+            height: auto;
+            width: 50%;
+            left: -20%;
+            top: 2100px;
+            transform: rotate(-340deg);
+        }
+    }
+
+    /**
+        Estilos - Banner middle
+    */
+    &--main_banner {
+        background: url("/../../img/banner.png");
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /**
+        Estilos - Video grid
+    */
+    &--videos {
+        margin: 0 80px;
+
+        border-bottom: 2px solid $second-color;
+
+        & .ts-videos-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px); 
+            grid-gap:50px;
+            justify-content: center;
+            align-items: center;
+            & .ts-video-item {
+                width: 400px;
+
+                & .video-ts--thumbail {
+                    max-width: 100%;
+                    max-height: 245px;
+                }
+
+                & .ts--link {
+                    position: relative;
+                    left: 40%;
+                    top: -164px;
+                }
+
+                & .ts--link .ts--play {
+                    margin: auto;
+                    width: 20%;
+                }
+
+                &.level-1 {
+                    grid-row-end: span 2;
+                }
+
+                &.level-2 {
+                    grid-row-end: span 1;
+                }
+                
+                & .title-v {
+                    position: relative;
+                    top: -60px;
+                }
+            }
+
+        }
+
+        & .ts-pattern-4 {
+            position: absolute;
+            z-index: -100;
+            height: auto;
+            width: 40%;
+            left: 82%;
+            top: 4400px;
+        }
+        & .ts-pattern-5 {
+            position: absolute;
+            z-index: -100;
+            height: auto;
+            width: 50%;
+            left: -20%;
+            top: 4000px;
+            transform: rotate(-340deg);
+        }
+
+        & .ts-video-btn {
+            background-color: $primary-color;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 15px;
+            border: 1px solid #fff;
+            font-family: $second-font;
+            font-weight: 200;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            left: 50%;
+            top: 25px;
+            transform: translateX(-50%);
+
+            &:hover {
+                color: $primary-color;
+                background-color: #fff;
+            }
+
+            & {
+                transition: color 0.1s linear 0.1s;
+            }
+        }
+    }
+}
+
+/*******************************************************************************************
+*                ---------------------
+*               |    content mobile Styles   |
+*               ---------------------
+*******************************************************************************************/
+@media all and(max-width: 1064px){
+    .ts-content {
+        &--about {
+            margin: 0 25px;
+
+            & .text {
+                width: 70%;
+            }
+        }
+        &--projects { 
+            margin: 0 25px;
+            margin-bottom: 100px;
+            & .ts-project-grid {
+                grid-template-columns: repeat(auto-fill, 300px); 
+                grid-gap: 50px;
+                & .ts-project-item {
+                    width: 300px;
+                }
+                & .ts-project {
+                    & .title-p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &--main_banner {
+            background-size: 145%;
+        }
+
+        &--videos {
+            margin: 0 30px;
+
+            border-bottom: 2px solid $second-color;
+
+            & .ts-videos-grid{
+                grid-template-columns: repeat(auto-fill, 300px); 
+                grid-gap:10px;
+                & .ts-video-item {
+                    width: 300px;
+                    & .video-ts--thumbail {
+                        max-width: 100%;
+                        max-height: 245px;
+                    }
+
+                    & .ts--link {
+                        position: relative;
+                        left: 40%;
+                        top: -123px;
+                    }
+
+                    & .title-v {
+                        text-align: center;
+                        position: relative;
+                        top: -60px;
+                    }
+                }
+
+            }
+        }
+    }
+}
